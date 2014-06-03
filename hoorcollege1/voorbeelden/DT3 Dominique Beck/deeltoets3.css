@@ -1,0 +1,88 @@
+#wrapper {
+	background-color:white;
+	width: auto;
+}
+
+
+#wrappergebruiker {
+	width:500px;
+	height:200px;
+	float:left;
+}
+
+#wrappercomputer {
+	width:500px;
+	height:200px;
+	float:right;
+}
+
+#berichtvenster {
+	width:200px;
+	height:50px;
+	margin-left:520px;
+	margin-top:-20px;
+}
+
+#buttons {
+	width: 500px;
+	height:250px;
+	margin-left:400px;
+	margin-top:230px;
+}
+
+#rood {
+	width:150px;
+	height:150px;
+	margin-left:20px;
+}
+
+#geel {
+	width:150px;
+	height:150px;
+}
+
+#blauw {
+	width:150px;
+	height:150px;
+}
+
+
+#gaverder {
+	width:200px;
+	height:200px;
+}
+
+#mengen {
+	width:200px;
+	height:200px;
+}
+
+#computergeel {
+	width:150px;
+	height:150px;
+}
+
+
+#computerblauw {
+	width:150px;
+	height:150px;
+}
+
+footer {
+	width:300px;
+	height:150px;
+}
+
+h1 {
+	margin-left:480px;
+}
+
+#gebruiker {
+	text-align: left;
+	margin-left:60px;
+}
+
+#computer {
+	text-align: left;
+	margin-left:60px;
+}

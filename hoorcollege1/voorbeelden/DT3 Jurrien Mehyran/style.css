@@ -1,0 +1,99 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+body {
+	background-color: #080808;
+}
+#wrapper {
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 950px;
+	height: 300px;
+	background-image:url('./image/wrapper.png');
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 170px;
+}
+#keyboard {
+	height: 300px;
+	width: 950px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: gray;
+}
+#keyMap {
+	height: 50px;
+	width: auto;
+	background-image:url('./image/keymap.png');
+}
+#toneselector {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin-left: 20px;
+	height: 60px;
+	width: 100px;
+	background-color: gray;
+}
+.toneItem {
+	color: white;
+	width: 98px;
+	height: 18px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+}
+/* key classes CSS */
+.key {
+	width: 98px;
+	height: 298px;
+	float: left;
+	background-color: white;
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+}
+.subkey {
+	width: 50px;
+	height: 175px;
+	position: absolute;
+	background-color: black;
+}
+
+/* key CSS */
+#bKey {
+	margin-left: 25px;
+}
+#aMKey {
+	margin-left: 0px;
+}
+#cMKey {
+	margin-left: 200px;
+}
+#dMKey {
+	margin-left: 300px;
+}
+#fMKey {
+	margin-left: 500px;
+}
+#gMKey {
+	margin-left: 600px;
+}
+#a2MKey {
+	margin-left: 700px;
+}
+#c2MKey {
+	margin-left: 900px;
+}
+#standard {
+	background-image:url('./image/b_standard_select.png');
+}
+#tinytones {
+	background-image:url('./image/b_tinytones.png');
+}
+#techno {
+	background-image:url('./image/b_techno.png');
+}

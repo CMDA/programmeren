@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Feed Forward</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <form id="contact-form" action="" method="post">
+    <fieldset>
+        <legend>Contact</legend>
+
+        <label for="naam">Naam:</label>
+        <input type="text" name="naam" id="naam" placeholder="Volledige naam" tabindex="1" required> <!-- autofocus -->
+
+        <label for="mailadres">E-mail:</label>
+        <input type="email" name="mailadres" id="mailadres" placeholder="Email adres" tabindex="2" required>
+
+        <label for="telefoon">Telefoon:</label>
+        <input type="tel" name="telefoon" id="telefoon" placeholder="Telefoonnummer" tabindex="3" required>
+
+        <label for="website">Website:</label>
+        <input  type="url" name="website" id="website" placeholder="http://" tabindex="4" required>
+
+        <label for="bericht">Bericht:</label>
+        <textarea name="bericht" id="bericht" placeholder="Bericht" tabindex="5" required></textarea>
+
+        <label for="submit">&nbsp;</label>
+        <button name="submit" id="submit" type="submit">Bericht versturen</button>
+        </div>
+    </fieldset>
+    </form>
+
+
+</body>
+</html>

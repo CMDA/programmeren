@@ -1,0 +1,55 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dit is de titel</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Wie gaat er koffie halen?" />
+    <meta name="author" content="Sonja Rouwhorst" />
+    <meta name="keywords" content="formulier met validatie" />
+    <script type="text/javascript" src="events.js"></script>
+    <script type="text/javascript" src="hc7_formValidation.js"></script>
+    <style>
+    	#foutmelding {
+    		color:red;
+        font-family:helvetica;
+    	}
+      .highlight {
+        color:red;
+        background-color: pink;
+      }
+      .normaal {
+        color:black;
+        background-color: white;
+      }
+
+      #resultaat{
+        margin-top:20px;
+        color:green;
+        font-size:40px;
+        font-family:helvetica;
+      }
+
+    </style>
+</head>
+<body>
+	<h1>Vul jullie namen in om te kijken wie er koffie moet halen.</h1>
+	<div id="foutmelding"></div>
+	<form name="eenFormulier" type="post" action="">
+		<fieldset>
+  			<legend>Vul hier jullie namen in:</legend>
+  			<p>Naam: <input name="naam" type="text" /></p>
+        <p>Naam: <input name="naamtwee" type="text" /></p>
+        <p>Naam: <input name="naamdrie" type="text" /></p>
+  			
+    
+    
+ 		</fieldset>
+ 		<input type="submit" name="submit" value="Wie moet er koffie halen?" />
+	</form>
+
+  <div id="resultaat"></div>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-programmeren
-============
+cmdppro
+=======
 
-It's a repository of all examples used in class.
+Code examples used in programming lectures @ CMD, HvA

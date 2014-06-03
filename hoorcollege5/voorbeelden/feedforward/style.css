@@ -1,0 +1,50 @@
+fieldset {
+    margin: 0 auto;
+    width: 14em;
+    background: silver;
+    border: 0px;
+}
+legend {
+    font-family: 'Helvetica';
+    font-size: 3em;
+    color: white;
+}
+label {
+    margin-top: 4px;
+    display: none;
+    width: 5em;
+    clear: both;
+    float: left;
+}
+input,
+textarea,
+button {
+    margin-top: 4px;
+    border: 0px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    width: 20em;
+}
+textarea {
+    height: 10em;
+}
+::-webkit-input-placeholder { color: silver; }
+:-moz-placeholder { color: silver; opacity:  1; }
+::-moz-placeholder { color: silver; opacity: 1; }
+:-ms-input-placeholder { color: silver; }
+
+
+.fail {
+    background: tomato;
+    border-color: red;
+}
+.fail::-webkit-input-placeholder { color: red; }
+.fail:-moz-placeholder { color: red; opacity:  1; }
+.fail::-moz-placeholder { color: red; opacity: 1; }
+.fail:-ms-input-placeholder { color: red; }
+
+.win {
+    background: lightgreen;
+    color: green;
+    border-color: green;
+}

@@ -1,0 +1,326 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+@font-face { 
+	font-family: District;
+	src: url('DistProTh.otf'); 
+}
+
+body {
+	background-color: #252525;
+	color: #fff;
+	font-family: District;
+	font-size: 1em;
+	min-height: 500px;
+	min-width: 400px;
+}
+
+
+
+#wrapper {
+	width: 100%;
+	height: 100%;
+	min-width: 900px;
+	min-height: 650px;
+}
+
+#start {
+	margin: 0 auto;
+	opacity: 1;
+	transition: 0.5s;
+}
+
+form {
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	margin: 0 auto;
+	background-color: #696969;
+	width: 300px;
+	margin-top: -200px; 
+	margin-left: -200px; 
+	padding: 50px;
+	box-shadow: 0 0 10px #000;
+	display: inline;
+
+}
+
+.formTag {
+	width: 100%;
+	display: inline-block;
+	margin: 0 0 10px 0;
+	text-shadow: 0 0 5px #000;
+
+}
+
+.formTag2 {
+	width: 100%;
+	display: inline-block;
+	margin: 10px 0;	
+	text-shadow: 0 0 5px #000;
+}
+
+input[type=text], input[type=number] {
+   border: none;
+   	box-shadow: 0 0 5px #000;
+   	padding: 5%;
+   	width: 75%;
+   	color: #555;
+   	background-color: #cecece;
+   	font-family: District;
+   	letter-spacing: 1px;
+   	font-weight: bold;
+   	text-shadow: 0 1px 3px #fff;
+}
+
+#submitBtn {
+	display: inline-block;
+	width: 90%;
+	margin: 7% 0 0 0;
+	color: #fff;
+	background-color: #00d6c9;
+	font-size: 20;
+	border: none;
+	padding: 7%;
+	box-shadow: 0 0 5px #000;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-shadow: 0 0 5px #000;
+	transition: 0.5s;
+}
+
+#submitBtn:hover {
+	background-color: #00a9a8;
+	cursor: pointer;
+}
+
+#formTxtVak, #formTxtVakLft {
+	margin: 5px;
+	color: #b81b1b;
+	font-weight: bold;
+}
+
+#uitleg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: 0 auto;
+	background-color: #696969;
+	width: 400px;
+	margin-top: -200px;
+	margin-left: -250px;
+	padding: 50px;
+	box-shadow: 0 0 10px #000;
+	display: none;
+	opacity: 0;
+	transition: 0.4s;
+}
+
+#btnSpelen, #btnUitleg {
+	display: inline-block;
+	width: 25%;
+	margin: 5% 5% 0 0;
+	color: #fff;
+	font-size: 20;
+	border: none;
+	padding: 3%;
+	box-shadow: 0 0 5px #000;
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: bolder;
+	text-shadow: 0 0 5px #000;
+	transition: 0.4s;
+}
+
+#btnSpelen{
+	background-color: #01a31c;
+}
+
+#btnSpelen:hover{
+	background-color: #018a18;
+	cursor: pointer;
+}
+
+#btnUitleg {
+	background-color: #593ec7;
+}
+
+#btnUitleg:hover {
+	background-color: #4f36ae;
+	cursor: pointer;
+}
+
+p.title {
+	font-size: 1.5em;
+	font-weight: bold;
+
+}
+#spel {
+	display: none;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: 0.4s;
+	position: absolute;
+	z-index: 0;
+}
+#tekstVak {
+
+}
+
+#buttonsWrap {
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	top: 75px;
+	right: 25px;
+	margin-right: 25px;
+	position: absolute;
+	width: 20%;
+}
+
+#nogEenKaart, #geenKaart {
+	display: inline-block;
+	float: left;
+	width: 100%;
+	margin: 5% 5% 0 0;
+	color: #fff;
+	font-size: 1.1em;
+	border: none;
+	padding: 5%;
+	box-shadow: 0 0 5px #000;
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: bolder;
+	text-shadow: 0 0 5px #000;
+	transition: 0.4s;
+}
+
+#nogEenKaart {
+	background-color: #01a31c;
+}
+
+#nogEenKaart:hover {
+	background-color: #018a18;
+	cursor: pointer;
+}
+
+#geenKaart {
+	background-color: #ae113d;
+}
+
+#geenKaart:hover {
+	background-color: #940f35;
+	cursor: pointer;
+}
+
+#kaartWrap {
+	margin-top: 25px;
+	height: 80%;
+	width: 100%;
+	min-height: 200px;
+}
+
+#spelerKaart, #pckaart {
+	width: 80%;
+	display: inline-block;
+	padding-left: 175px;
+	height: 40%;
+	min-height: 200px;
+}
+
+#spelerKaartImg {
+	margin-left: -135px;
+	height: 100%;
+	min-height: 150px;
+	position: relative;
+
+}
+
+#resultaatwrap {
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	display: none;
+	transition: 0.4s;
+	opacity: 0;
+}
+
+#resultaat {
+	position: relative;
+	z-index: 2;
+	top: 50%;
+	left: 50%;
+	margin: 0 auto;
+	background-color: #696969;
+	width: 400px;
+	margin-top: -200px;
+	margin-left: -250px;
+	padding: 50px;
+	box-shadow: 0 0 10px #000;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-shadow: 0 0 5px #000;
+}
+
+#btnOpnieuw {
+	display: inline-block;
+	width: 100%;
+	background-color: #2d89f0;
+	margin: 5% 5% 0 0;
+	color: #fff;
+	font-size: 20;
+	border: none;
+	padding: 3%;
+	box-shadow: 0 0 5px #000;
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: bolder;
+	text-shadow: 0 0 5px #000;
+	transition: 0.4s;
+	z-index: 10;
+}
+
+#btnOpnieuw:hover {
+	background-color: #297ad6;
+	cursor: pointer;
+}
+
+#spel h2 {
+	display: inline-block;
+	width: 100%;
+	border-bottom: 1px solid #fff;
+	padding-bottom: 5px;
+	padding-left: 1%;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-shadow: 0 0 5px #000;
+}
+
+#score {
+	position: fixed;
+	height: 75px;
+	width: 200px;
+	bottom: 25px;
+	right: 25px;
+	font-family: District;
+	font-size: 1.1em;
+	padding: 25px;
+	background-color: #ff7d23;
+	box-shadow: 0 0 10px #000;
+}
+
+#scoreTitle {
+	display: inline-block;
+	width: 100%;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+#scoreNmbr{
+	float: right;
+}

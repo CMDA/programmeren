@@ -1,0 +1,83 @@
+div {
+    width: 200px;
+    height: 278px;
+    position: absolute;
+    margin-left: -100px;
+    margin-top: -139px;
+    background: url(balloon.png);
+
+    -webkit-animation: float 8s ease-in-out infinite;
+       -moz-animation: float 8s ease-in-out infinite;
+            animation: float 8s ease-in-out infinite;
+
+}
+
+@-moz-keyframes float {
+    0% {
+        top:50%;
+        right:1.5%;
+        -moz-transform:rotate(0deg)
+    }
+    25% {
+        right:2%
+    }
+    50% {
+        top:0%;
+        right:1.5%;
+        -moz-transform:rotate(10deg)
+    }
+    75% {
+        right:2.5%
+    }
+    100% {
+        top:50%;
+        right:1.5%;
+        -moz-transform:rotate(0deg)
+    }
+}
+@-webkit-keyframes float {
+    0% {
+        top:50%;
+        right:1.5%;
+        -webkit-transform:rotate(0deg)
+    }
+    25% {
+        right:2%
+    }
+    50% {
+        top:0%;
+        right:1.5%;
+        -webkit-transform:rotate(10deg)
+    }
+    75% {
+        right:2.5%
+    }
+    100% {
+        top:50%;
+        right:1.5%;
+        -webkit-transform:rotate(0deg)
+    }
+}
+@keyframes float {
+    0% {
+        top:50%;
+        right:1.5%;
+        transform:rotate(0deg)
+    }
+    25% {
+        right:2%
+    }
+    50% {
+        top:0%;
+        right:1.5%;
+        transform:rotate(10deg)
+    }
+    75% {
+        right:2.5%
+    }
+    100% {
+        top:50%;
+        right:1.5%;
+        transform:rotate(0deg)
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BlackJack by Andre Bruynseels</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Voor het vak Programmeren heb ik een BlackJack spel geschreven in JavaScript" />
+    <meta name="author" content="André Bruynseels" />
+    <meta name="keywords" content="blackjack, hva, programmeren" />
+    <link href="css/style.css" media="screen" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/events.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="start">
+	        <form name="start">
+	            <span class="formTag">Naam</span>
+	            <div id="formTxtVak">	            	
+	            </div><input type="text" name="naam" id="naam" autocomplete="off" />
+	            <span class="formTag2">Leeftijd</span>
+	            <div id="formTxtVakLft"></div>
+	            <input type="number" name="lft" id="lft" autocomplete="off" value="18" />
+				<div id="submitBtn">Speel BlackJack!</div>
+	        </form>
+		</div>
+
+
+		<div id="uitleg">
+			<div id="txtUitleg"></div>
+			<div id="btnSpelen">Spelen!</div>
+				<div id="btnUitleg">Uitleg</div>
+		</div>
+
+		<div id="spel">
+			<div id="kaartWrap">
+				<h2 id="spelerTitle"></h2>
+				<div id="spelerKaart">
+				</div>
+				<h2 id="computerTitle"></h2>
+				<div id="pckaart">
+					<img id="spelerKaartImg" src="img/back.png" alt="achterkant van kaart" />
+					<img id="spelerKaartImg" src="img/back.png" alt="achterkant van kaart" />
+				</div>
+			</div>
+
+			<div id="tekstVak"></div>
+			<div id="buttonsWrap">
+				<div id="nogEenKaart">Hit Me!</div>
+				<div id="geenKaart">End Turn</div>
+			</div>
+				<div id="score"></div>
+		</div>
+
+		<div id="resultaatwrap">
+			<div id="resultaat"></div>
+		</div>
+
+
+	</div>
+</body>
+</html>
