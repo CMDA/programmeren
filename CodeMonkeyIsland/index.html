@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>CodeMonkeyIsland</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="Spel bij cursus Inleiding Programmeren, CMD Amsterdam" />
+        <link href="static/css/style.css" media="screen" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" type="image/png" href="static/images/favicon.png"/>
+    </head>
+
+    <body>
+       <main>
+            <h1>Code Monkey Island</h1>
+
+            <section class="board">
+                <img src="static/images/teleporter.gif" class="teleporter start" alt="teleporter" />
+                
+                <ul class="pawns">
+                    <li><img src="static/images/chimp.png" alt="speler 1"/></li>
+                    <li><img src="static/images/gorilla.png" alt="speler 2"/></li>
+                    <li><img src="static/images/oranutang.png" alt="speler 3"/></li>
+                </ul>
+                
+                <img src="static/images/teleporter.gif" class="teleporter finish" alt="teleporter"/>
+                
+                <ul class="fields">
+                
+                </ul>
+            </section>
+
+            <aside>
+                <figure class="dice">    
+                    <img src="static/images/one.png" alt="dobbelsteen" />
+                </figure>
+
+                <section class="feedback">
+                    <h1>Feedback:</h1>
+                    <p>Gooi de dobbelsteen.</p>
+                </section>
+
+                <section class="rules">
+                    <h1>Regels:</h1>
+                    <dl>
+                        <dt class="forward">Groen veld</dt>
+                        <dd>= 1 stap vooruit</dd>
+                        <dt class="back">Rood veld</dt>
+                        <dd>= 2 stappen achteruit</dd>
+                        <dt class="neutral">Neutraal veld</dt>
+                        <dd>= geen invloed</dd>
+                    </dl>
+                </section>
+            </aside>
+            
+        </main>
+
+        <script src="static/js/app/app.js"></script>
+    </body>
+</html>

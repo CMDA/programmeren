@@ -1,0 +1,248 @@
+/*
+images courtesy of:
+    http://codemonkeyplanet.com
+    Open Clip Art Library user rg1024
+    http://www.freepik.com/free-vector/jungle-animals-set_719884.htm
+    http://www.habboxwiki.com/File:Space_teleporter.gif
+
+sfx courtesy of:
+    Mike Koenig and is from SoundBilble.com
+
+*/
+
+@import url('http://fonts.googleapis.com/css?family=Lato:400,700');
+
+* {
+    margin-top: 0;
+    box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+    background: #A2D4B1 url('../images/bg-pattern.png') top center;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    overflow: auto;
+    text-align: center;
+    max-width: 2000px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+header, main, footer, article, nav, section,  aside, figure, textarea {
+    display:block;
+}
+main {
+    background: -moz-linear-gradient(top, rgba(162,212,177,1) 0%, rgba(162,212,177,1) 87%, rgba(162,212,177,0) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(162,212,177,1)), color-stop(87%,rgba(162,212,177,1)), color-stop(100%,rgba(162,212,177,0)));
+    background: -webkit-linear-gradient(top, rgba(162,212,177,1) 0%,rgba(162,212,177,1) 87%,rgba(162,212,177,0) 100%);
+    background: -o-linear-gradient(top, rgba(162,212,177,1) 0%,rgba(162,212,177,1) 87%,rgba(162,212,177,0) 100%);
+    background: -ms-linear-gradient(top, rgba(162,212,177,1) 0%,rgba(162,212,177,1) 87%,rgba(162,212,177,0) 100%);
+    background: linear-gradient(to bottom, rgba(162,212,177,1) 0%,rgba(162,212,177,1) 87%,rgba(162,212,177,0) 100%);
+    margin: 0 auto;
+    padding: 2em;
+    width: 1100px;
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+    order:1;
+}
+ul {
+    list-style: none
+}
+
+aside {
+    display: flex;
+    order:2;
+}
+    aside h1 {
+        font-size: 1.5em;
+    }
+aside .dice {
+    margin:0;
+    align-self: flex-end;
+    position: relative;
+}
+aside .dice img {
+    -webkit-filter: saturate(0%) hue-rotate(-160deg);
+    cursor: pointer;
+     -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width:160px;  
+}
+    aside p,
+    aside dl {
+        display: inline-block;
+        border: none;
+        padding: 1em;
+        border-radius: 5px;
+        font-size: 0.9em;
+        background: #789f84;
+        color: #fff;
+        height: 100px;
+        margin: 0 0 0 10px;
+        text-align: left
+    }
+
+    aside .feedback p {
+        width: 300px;
+        vertical-align: top;
+    }
+
+    aside .rules dl {
+        width: 530px;
+        overflow:hidden;
+    }
+        dt, dd {
+            float:left;
+            margin-bottom: .2em;
+            padding:.2em;
+        }
+        dt {
+            font-weight: bold;
+            clear:left;
+            width:20%;
+            border-radius:3px;
+        }
+
+
+.board {
+    order:3;
+    height:120px;
+    position:relative;
+    margin:2em 0 0;
+}
+    .pawns {
+        position:absolute;
+        height:120px;
+        width:100%;
+    }
+    .pawns li {
+        position: absolute;
+        
+        left: -60px;
+        opacity: 1;
+        transform: scaleX(1);
+        transition: left 0.3s ease-out 0.5s, opacity 1s ease-out 0.8s, transform 1s ease-out 0.8s;
+        z-index: 1;
+    }
+    .pawns li img {
+        width: 45px;
+    }
+    .pawns li:nth-child(2) {
+        top: 35px;
+        left: -50px;
+    }
+    .pawns li:nth-child(3) {
+        top: 65px;
+        left: -40px;
+    }
+
+    .fields {
+        padding: 10px 0 0 0;
+        display: inline-block;
+        list-style-type: none;
+        position: absolute;
+        top:-10px;
+        display: flex;
+    }
+
+        .fields li {
+            width: 68px;
+            height: 120px;
+            
+            border: 4px solid #FCF7D8;
+            border-radius: 5px;
+        }
+
+        .forward {
+            background: #AEDC8F;
+        }
+
+        .back {
+            background: #F75F51;
+        }
+
+        .neutral {
+           background: #FF953D; 
+        }
+
+    .teleporter {
+        position: absolute;
+        left: -60px;
+        bottom: 0;
+        z-index: 0;
+    }
+
+    .finish {
+        left: 1025px;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+
+/* Animations */
+.jump {
+    -webkit-animation: jump 0.3s linear 0.5s;
+    -moz-animation: jump 0.3s linear 0.5s;
+    animation: jump 0.3s linear 0.5s;
+}
+
+.teleport {
+    -webkit-animation: teleport 3s ease-out 0.8s;
+    -moz-animation: teleport 3s ease-out 0.8s;
+    animation: teleport 3s ease-out 0.8s;
+}
+
+@-webkit-keyframes roll {
+  0%   { transform: rotate(-300deg) }
+  100% { transform: rotate(0deg)}
+}
+@-webkit-keyframes slider {
+  0%   { transform: translateX(-500px) }
+  100% { transform: translateX(0)}
+}
+@-webkit-keyframes fade {
+  0%   { opacity: 0 }
+  100% { opacity: 1 }
+}
+
+@-webkit-keyframes jump {
+  0%   { top: 0 }
+  50%   { top: -10px }
+  100%   { top: 0 }
+}
+
+@-webkit-keyframes teleport {
+  0%    { opacity: 1; transform: scaleX(1) }
+  10%   {top: -10px}
+  25%   { opacity: 1; transform: scaleX(1); top: 0; }
+  50%   { opacity: 0; transform: scaleX(0) }
+  51%   { left: -60px }
+  100%  { left: -60px; opacity: 1; transform: scaleX(1) }
+}
+
+.slidein {
+    -webkit-animation: slider 0.5s ease-out, roll 0.5s ease-out, fade 0.5s ease-out;
+    animation: slider 0.5s ease-out;
+}
+.rotatein {
+    -webkit-animation: roll 0.5s ease-out, fade 0.5s ease-out;
+    animation: roll 0.5s ease-out, fade 0.5s ease-out;
+}
