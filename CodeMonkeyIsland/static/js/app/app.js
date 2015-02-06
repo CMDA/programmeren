@@ -1,26 +1,3 @@
-/*
-ToDo: (move to github Issues)
- # BUGS
- ------	
-  # Fix the damn teleporter
-  # Disable rolling the dice (click event) when still moving pawns or completing tasks
- 
- # FEATURES
- ----------
-  # Update feedback field
-  # Pawns can't land on occupied field
-
- # IMPROVEMENTS
- --------------
-  # Use a settings object, or better way of controlling states/session?
-  # Use requestAnimationFrame instead of setTimeout (http://creativejs.com/resources/requestanimationframe/)
-  # Separate objects into files / modules
-  # Animate with Web Animation API
-
-*/
-
-/* Credits: */
-
 (function() {
 	'use strict';
 
