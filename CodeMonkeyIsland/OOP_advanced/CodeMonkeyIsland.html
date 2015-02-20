@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>CodeMonkeyIsland</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="spel bij cursus Inleiding Programmeren, CMD Amsterdam" />
+        <meta name="author" content="Laura Benvenuti, David de Vries" />
+        <!--meta name="keywords" content="zoekterm1, zoekterm2, ..." / -->
+        <link href="./css/style.css" media="screen" rel="stylesheet" type="text/css" />
+
+        <script type="text/javascript" src="./script/CMI.js"></script>
+        <script type="text/javascript" src="./script/Dice.js"></script>
+        <script type="text/javascript" src="./script/Controller.js"></script>
+        <script type="text/javascript" src="./script/Opdracht.js"></script>
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    </head>
+
+    <body>
+       <main>
+            <h1>Code Monkey Island</h1>
+
+            <section class="Dice">
+                <img src="img/one.png" id="dice" alt="dice" />
+            </section>
+
+            <section class="Feedback">
+                <h2>Feedback:</h2>
+                <textarea id="feedback" >Gooi de dobbelsteen.</textarea>
+            </section>
+
+            <section class="Rules">
+                <h2>Regels:</h2>
+                <textarea id="rules" ></textarea>
+            </section>
+
+            <ul id="gameBoard" class ="Board">
+                <img src="img/teleporter.gif" class="teleporter" id="teleporter1" alt="teleporter" />
+                <img src="img/chimp.png" class="pawn" id="player1"  alt="speler1"/>
+                <img src="img/gorilla.png" class="pawn" id="player2"  alt="speler2"/>
+                <img src="img/oranutang.png" class="pawn" id="player3"  alt="speler3"/>
+                <img src="img/teleporter.gif" class="teleporter" id="teleporter2"  alt="teleporter"/>
+            </ul>
+        </main>
+    </body>
+</html>
